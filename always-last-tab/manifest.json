@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Always Last Tab",
+  "version": "2.0",
+  "description": "Keep one chosen tab at the far right for Ctrl+9, even across Chrome restarts.",
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle Always Last for this tab"
+  }
+}

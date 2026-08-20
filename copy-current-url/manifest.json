@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Current URL",
+  "version": "1.1.0",
+  "description": "Copy the current Chrome tab's URL with one shortcut and show a brief confirmation toast.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "offscreen",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Copy current URL"
+  },
+  "commands": {
+    "copy-current-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Copy the current tab URL"
+    }
+  }
+}
