@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Essentials",
+  "version": "0.1.0",
+  "description": "Keep selected pinned tabs as resettable, unloadable Essentials.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Chrome Essentials",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "reset-active-essential": {
+      "suggested_key": {
+        "default": "Alt+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "Reset the active Essential"
+    }
+  }
+}

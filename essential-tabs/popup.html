@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chrome Essentials</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Essentials</h1>
+          <p>Close an Essential with Ctrl+W to reset and unload it.</p>
+        </div>
+        <button id="add-current" class="primary">Add current tab</button>
+      </header>
+
+      <div id="status" role="status" aria-live="polite"></div>
+      <section id="empty" class="empty" hidden>
+        No Essentials yet. Add the current tab to get started.
+      </section>
+      <section id="list" class="list"></section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
